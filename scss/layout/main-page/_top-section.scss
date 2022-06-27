@@ -44,6 +44,10 @@
 
             &~.join-section {
                 margin-block-start: $top-section-height;
+
+                @include respond(mini-desktop) {
+                    margin-block-start: 10rem;
+                }
             }
         }
     }

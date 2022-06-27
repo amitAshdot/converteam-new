@@ -7,7 +7,7 @@
                align-items: center;
 
                @include respond(mini-desktop) {
-                   padding-block-start: 10rem;
+                   //    padding-block-start: 10rem;
                    padding-block-end: 10rem;
                }
 
@@ -31,6 +31,11 @@
                    width: 24rem;
                    object-fit: contain;
                    transform: rotate(334deg);
+
+                   @include respond(mini-desktop) {
+                       top: -3.5%;
+                   }
+
                }
            }
 
@@ -133,9 +138,11 @@
                font-weight: bold;
 
                @include respond(mini-desktop) {
-                   width: 33rem;
-                   height: 7rem;
-                   font-size: 3rem;
+                   margin: auto;
+                   width: 43rem;
+                   height: 12rem;
+                   font-size: 7rem;
+                   margin-top: 70rem;
                }
 
            }
