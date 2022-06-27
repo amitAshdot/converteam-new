@@ -4,10 +4,10 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        padding-block-start: 4rem;
-        padding-block-end: 4rem;
-        padding-inline-start: 7rem;
-        padding-inline-end: 7rem;
+        padding-block-start: 8rem;
+        padding-block-end: 8rem;
+        padding-inline-start: 8rem;
+        padding-inline-end: 8rem;
         overflow: visible;
         // border: 1px solid blue;
         max-width: 1920px;
@@ -51,6 +51,11 @@
         display: flex;
     }
 
+    &-bottom {
+        display: flex;
+        // padding-block-end: 5rem;
+    }
+
     &-title {
         color: $color-black;
         width: 19.8%;
@@ -65,7 +70,7 @@
     }
 
     &-form {
-        padding-inline-start: 1rem;
+        padding-inline-start: 6rem;
 
         &-inputs {
             display: flex;
@@ -80,13 +85,14 @@
 
     &-input {
         font-size: 0.9rem;
-        width: 21rem;
-        height: 3.2rem;
+        width: 18rem;
+        height: 2.6rem;
         padding-inline-start: 1rem;
         padding-inline-end: 1rem;
         margin-inline-end: 1rem;
         border-radius: 31px;
-        border: 2px solid $color-black;
+        border: none;
+        // border: 2px solid $color-black;
         background: $color-grey-dark-3;
 
         @include respond(mini-desktop) {
@@ -138,8 +144,9 @@
 
     &-submit {
         @include global-btn($color-black, $color-primary, $color-primary);
+        line-height: 1.125rem;
         width: 11rem;
-        height: 3.2rem;
+        height: 2.6rem;
         margin-block-start: 1rem;
         margin-inline: auto;
         border-radius: 31px;

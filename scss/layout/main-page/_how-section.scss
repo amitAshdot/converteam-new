@@ -33,6 +33,7 @@
         line-height: 3.2rem;
         font-size: 3.2rem;
         width: fit-content;
+        padding-inline-start: 7rem;
 
         @include respond(mini-desktop) {
             line-height: 6.8rem;
