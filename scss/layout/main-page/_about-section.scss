@@ -15,15 +15,17 @@
 
         @include respond(mini-desktop) {
             flex-direction: column;
-            padding-block-end: 4rem;
-            padding-inline-start: 5rem;
-            padding-inline-end: 5rem;
+            padding-block-start: 10rem;
+            padding-block-end: 10rem;
+            padding-inline-start: 0rem;
+            padding-inline-end: 0rem;
             height: auto;
+            background: $color-secondary;
+            color: $color-white;
         }
     }
 
     &-title {
-        color: $color-black;
         text-align: right;
         line-height: 4.1rem;
         font-size: 4.1rem;
@@ -49,26 +51,57 @@
 
         @include respond(mini-desktop) {
             border-inline-end: 0;
+            width: 100%;
         }
     }
 
     &-text {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        padding-block-end: 2rem;
-
-        &:first-child {
-            font-weight: bold;
-        }
-
         @include respond(mini-desktop) {
-            line-height: 5rem;
-            font-size: 5rem;
+            margin-block-end: 15rem;
         }
 
-        & span {
+        &-title {
+            position: relative;
             font-weight: bolder;
             font-family: 'adoveFnt22-bold';
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding-block-end: 2rem;
+
+            @include respond(mini-desktop) {
+                line-height: 5rem;
+                font-size: 5rem;
+                width: fit-content;
+                padding-inline-start: 11rem;
+                padding-block-end: 5rem;
+                // margin-block-end: 2rem;
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 5%;
+                    top: 75%;
+                    right: 0;
+                    background: $color-primary;
+                }
+            }
+        }
+
+        & p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding-block-end: 2rem;
+
+            &:first-child {
+                font-weight: bold;
+            }
+
+            @include respond(mini-desktop) {
+                line-height: 6rem;
+                font-size: 4.5rem;
+                padding-inline: 12rem;
+            }
         }
     }
 }

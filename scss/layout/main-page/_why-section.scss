@@ -16,6 +16,8 @@
 
         @include respond(mini-desktop) {
             flex-direction: column;
+            padding-block-start: 10rem;
+            padding-block-end: 10rem;
             padding-inline-start: 5rem;
             padding-inline-end: 5rem;
         }
@@ -30,9 +32,11 @@
         @include respond(mini-desktop) {
             line-height: 6.8rem;
             font-size: 6.8rem;
-            margin-block-end: 1rem;
+            margin-block-end: 5rem;
             width: 100%;
             text-align: center;
+            color: $color-primary;
+            font-weight: 900;
         }
     }
 
