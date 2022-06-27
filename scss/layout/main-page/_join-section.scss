@@ -9,7 +9,7 @@
                @include respond(mini-desktop) {
                    //    padding-block-start: 10rem;
 
-                   padding-block-start: 10rem;
+                   padding-block-start: 0rem;
                    padding-block-end: 10rem;
                }
 
@@ -35,9 +35,8 @@
                    transform: rotate(334deg);
 
                    @include respond(mini-desktop) {
-                       top: -3.5%;
+                       top: -2.5%;
                    }
-
                }
            }
 

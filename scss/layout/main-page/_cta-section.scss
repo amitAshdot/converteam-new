@@ -45,10 +45,23 @@
         padding-block-end: 0rem;
         padding-inline-start: 5rem;
         padding-inline-end: 5rem;
+
+        @include respond(mini-desktop) {
+            padding-block-start: 15rem;
+            padding-block-end: 15rem;
+            padding-inline-start: 8rem;
+            padding-inline-end: 8rem;
+            border-radius: 10px;
+        }
     }
 
     &-top {
         display: flex;
+
+        @include respond(mini-desktop) {
+            flex-direction: column;
+            gap: 5rem;
+        }
     }
 
     &-bottom {
@@ -71,6 +84,10 @@
 
     &-form {
         padding-inline-start: 6rem;
+
+        @include respond(mini-desktop) {
+            padding-inline-start: 0rem;
+        }
 
         &-inputs {
             display: flex;
