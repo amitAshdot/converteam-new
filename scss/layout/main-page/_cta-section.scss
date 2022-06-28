@@ -166,14 +166,14 @@
             }
         }
 
-        &:nth-child(n+4) {
-            margin-block-start: 3rem;
-            background-color: $color-grey-dark-2;
+        // &:nth-child(n+4) {
+        //     margin-block-start: 3rem;
+        //     background-color: $color-grey-dark-2;
 
-            @include respond(mini-desktop) {
-                margin-block-start: 10rem;
-            }
-        }
+        //     @include respond(mini-desktop) {
+        //         margin-block-start: 10rem;
+        //     }
+        // }
 
         &.select {
             appearance: none;
@@ -181,7 +181,8 @@
             background-repeat: no-repeat;
             background-position: left 1rem center;
             background-size: 1em;
-            background-color: $color-grey-dark-2;
+            color: gray;
+            // background-color: $color-grey-dark-2;
             margin-top: 0rem;
 
             &:focus {
