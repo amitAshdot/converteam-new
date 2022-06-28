@@ -51,7 +51,7 @@
         @include respond(mini-desktop) {
             flex-wrap: wrap;
             width: 100%;
-            justify-content: space-between;
+            justify-content: space-evenly;
             border-inline-start: 0;
         }
     }
@@ -69,7 +69,7 @@
         padding-inline-end: 1rem;
 
         @include respond(mini-desktop) {
-            width: 49%;
+            width: 46%;
             padding-inline-start: 0rem;
             padding-inline-end: 0rem;
         }
