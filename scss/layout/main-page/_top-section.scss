@@ -93,10 +93,10 @@
         position: relative;
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 3rem;
 
         @include respond(mini-desktop) {
-            gap: 3rem;
+            gap: 7rem;
         }
 
         // &-item {

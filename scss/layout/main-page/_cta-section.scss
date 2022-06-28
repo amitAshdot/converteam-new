@@ -209,7 +209,7 @@
         margin-inline: auto;
         border-radius: 31px;
         background-color: $color-primary;
-
+        font-family: "ploniBold", sans-serif;
 
         @include respond(mini-desktop) {
             font-size: 3.9rem;

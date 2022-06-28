@@ -52,6 +52,10 @@
         @include respond(mini-desktop) {
             flex-direction: column-reverse;
         }
+
+        & a:last-child {
+            direction: ltr;
+        }
     }
 
     &-rights {

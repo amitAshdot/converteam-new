@@ -1,26 +1,33 @@
 @font-face {
-  font-family: 'adoveFnt22';
-  src: url(https://amitashdot.github.io/targetCall-landing/fonts/ploni-regular-aaa.otf);
+  font-family: 'ploniLight';
+  src: url(../../fonts/ploni-light-aaa.otf);
   font-display: swap;
 
 }
 
 @font-face {
-  font-family: 'adoveFnt22-bold';
-  src: url(https://amitashdot.github.io/targetCall-landing//fonts/ploni-bold-aaa.otf);
+  font-family: 'ploni';
+  src: url(../../fonts/ploni-regular-aaa.otf);
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: 'ploniBold';
+  src: url(../../fonts/ploni-bold-aaa.otf);
   font-display: swap;
 
 }
 
 // @font-face {
-//   font-family: 'adoveFnt22-ultrabold';
+//   font-family: 'ploni-ultrabold';
 //   src: url(https://amitashdot.github.io/targetCall-landing//fonts/ploni-ultrabold-aaa.otf);
 //   font-display: swap;
 
 // }
 
 body {
-  font-family: 'adoveFnt22', sans-serif;
+  font-family: 'ploni', sans-serif;
   font-weight: 400;
   font-size: $defaut-font-size;
   line-height: 1.7;
@@ -63,8 +70,8 @@ h3 {
   }
 }
 
-p strong {
-  font-family: "adoveFnt22", sans-serif;
+.bold {
+  font-family: "ploniBold", sans-serif;
 }
 
 p {
