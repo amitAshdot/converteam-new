@@ -33,12 +33,12 @@
         padding-inline-start: 1rem;
 
         @include respond(mini-desktop) {
-            text-align: center;
+            text-align: right;
             line-height: 6.8rem;
             font-size: 6.8rem;
             width: 100%;
             margin-block-end: 1rem;
-            padding-inline-start: 15rem;
+            padding-inline-start: 11rem;
             padding-inline-end: 15rem;
             padding-block-end: 8rem;
             padding-block-end: 8rem;
@@ -53,6 +53,7 @@
         @include respond(mini-desktop) {
             border-inline-end: 0;
             width: 100%;
+            padding-inline-end: 10rem;
         }
 
 
@@ -107,7 +108,8 @@
             @include respond(mini-desktop) {
                 line-height: 6rem;
                 font-size: 4.5rem;
-                padding-inline: 12rem;
+                padding-inline-start: 10rem;
+                padding-inline-end: 3rem;
             }
         }
 
