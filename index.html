@@ -56,7 +56,12 @@
 
     <!-- JOIN SECTION START-->
     <section class="join-section" aria-label="join-section">
-        <img src="./images/main-bg.webp" alt="תמונת רקע" class="main-bg">
+        <picture>
+            <source media="(max-width:1000px)" srcset="./images/main-bg-mobile.webp" alt="תמונת רקע" class="main-bg"
+                width="1000" height="1500">
+            <img src="./images/main-bg.webp" alt="תמונת רקע" class="main-bg" width="2500" height="3750">
+        </picture>
+        <!-- <img src="./images/main-bg.webp" alt="תמונת רקע" class="main-bg" width="2500" height="3750"> -->
         <img src="./images/e.webp" alt="תמונת רקע e" class="join-image-1 join-bg">
 
         <div class="join-section-top">
