@@ -66,6 +66,7 @@
         top: 40%;
         border-radius: 10px 0px 0px 70px;
         padding: 4rem 1rem;
+        display: none;
 
         @include respond(mini-desktop) {
             top: 68%;
