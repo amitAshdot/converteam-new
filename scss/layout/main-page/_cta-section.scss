@@ -18,6 +18,8 @@
             padding-inline-start: 5rem;
             padding-inline-end: 5rem;
             padding-block-end: 5rem;
+            flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -51,7 +53,40 @@
             padding-block-end: 15rem;
             padding-inline-start: 8rem;
             padding-inline-end: 8rem;
-            border-radius: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    &-social {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: $color-primary;
+        right: 0;
+        top: 40%;
+        border-radius: 10px 0px 0px 70px;
+        padding: 4rem 1rem;
+
+        @include respond(mini-desktop) {
+            top: 68%;
+            padding: 8rem 3rem;
+            border-radius: 5px 0px 0px 20px;
+            gap: 2rem;
+        }
+
+        &-icon {
+            // width: 2.5rem;
+            // height: 2.5rem;
+
+            &-img {
+                width: 2.5rem;
+                height: 2.5rem;
+
+                @include respond(mini-desktop) {
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
         }
     }
 
@@ -135,7 +170,7 @@
             background-color: $color-grey-dark-2;
 
             @include respond(mini-desktop) {
-                // margin-block-start: 2rem;
+                margin-block-start: 10rem;
             }
         }
 
@@ -150,6 +185,10 @@
 
             &:focus {
                 outline: none;
+            }
+
+            @include respond(mini-desktop) {
+                margin-block-start: 2rem;
             }
         }
 
