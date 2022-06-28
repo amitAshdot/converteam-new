@@ -24,6 +24,12 @@
                    top: 8rem;
                }
 
+               &-image {
+                   @include respond(mini-desktop) {
+                       height: 150vw;
+                   }
+               }
+
                &-bottom {}
            }
 
